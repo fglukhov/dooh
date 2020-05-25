@@ -1,0 +1,943 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Dooh</title>
+    <link rel="icon" href="favicon.ico">
+    <link rel="stylesheet" href="js/bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/bootstrap-select.min.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="js/fancybox/jquery.fancybox.min.css">
+    <link rel="stylesheet" href="js/bootstrap-fileinput/css/fileinput.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <!--link(rel='stylesheet',href='css/animations.css')-->
+  </head>
+  <body>
+    <div class="over-wrapper">
+      <div id="mobile-indicator"></div>
+      <div id="sm-indicator"></div>
+      <header>
+        <div class="container">
+          <div class="header-content">
+            <div class="row">
+              <div class="header-col-1">
+                <div class="header-button-mob"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                <div class="header-logo"><a href="/"><img src="images/logo.svg" alt="Dooh"></a></div>
+                <div class="header-logo-fixed"><a href="/"><img src="images/logo-fixed.svg" alt="Dooh"></a></div>
+              </div>
+              <div class="header-col-2">
+                <div class="navbar-trigger"><span></span><span></span><span></span></div>
+                <div class="navbar-wrapper">
+                  <div class="navbar-wrapper-inner">
+                    <div class="close"></div>
+                    <ul class="nav navbar-nav">
+                      <li><a href="#location"><span>Варианты размещения</span></a></li>
+                      <li><a href="#about"><span>О&nbsp;компании</span></a></li>
+                      <li><a href="#projects"><span>Наши проекты</span></a></li>
+                      <li><a href="#contacts"><span>Контакты</span></a></li>
+                    </ul>
+                    <div class="d-block d-md-none">
+                      <div class="mob-contacts">
+                        <div class="mob-contacts-item"><a class="header-contacts-link header-phone" href="tel: +7 (495) 111 22 33">
+                            <div class="ico"></div>
+                            <div class="ttl">+7 (495) 111 22 33</div></a></div>
+                        <div class="mob-contacts-item"><a class="header-contacts-link header-email" href="mailto: info@digital-Dooh.ru">
+                            <div class="ico"></div>
+                            <div class="ttl">info@digital-dooh.ru</div></a></div>
+                        <div class="mob-contacts-item"><a class="btn btn-1" href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="header-col-3">
+                <div class="header-contacts">
+                  <div class="header-contacts-item">
+                    <div class="header-phone-wrapper"><a class="header-contacts-link header-phone" href="tel: +7 (495) 111 22 33">
+                        <div class="ico"></div>
+                        <div class="ttl">+7 (495) 111 22 33</div></a></div>
+                    <div class="header-button-wrapper"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                  </div>
+                  <div class="header-contacts-item"><a class="header-contacts-link header-email" href="mailto: info@digital-Dooh.ru">
+                      <div class="ico"></div>
+                      <div class="ttl">info@digital-dooh.ru</div></a></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <div class="page-wrapper">
+          <!-- Заголовок страницы-->
+          <div class="section section-page-header">
+            <div class="page-header-pic" style="background-image: url(files/page-header-bg.jpg);"></div>
+            <div class="section-content">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="page-header-descr">
+                      <h1>Рекламное агентство полного цикла</h1>
+                      <p>Ваше предложение не&nbsp;останется незамеченным</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="top-links"><a class="top-link top-link-consult" href="#" data-toggle="modal" data-target="#consultModal">
+                        <div class="top-link-pic"><img src="images/ico-consult.png"></div>
+                        <div class="top-link-descr">
+                          <div class="ttl"><span>Получить<br>консультацию</span></div>
+                        </div></a><a class="top-link top-link-brief" href="#" data-toggle="modal" data-target="#briefModal">
+                        <div class="top-link-pic"><img src="images/ico-brief.png"></div>
+                        <div class="top-link-descr">
+                          <div class="ttl"><span>Заполнить<br>бриф</span></div>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Заголовок страницы END-->
+          <!-- Варианты размещения--><a name="location"></a>
+          <div class="section section-alt section-location">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header">
+                  <h2>Варианты размещения</h2>
+                </div>
+                <div class="location-tabs-wrapper">
+                  <div class="form-alt location-tabs-select-wrapper">
+                    <select class="location-tabs-select">
+                      <option value="1">Медиафасады</option>
+                      <option value="2">Суперсайт</option>
+                      <!--option(value='3') 3 &times; 6-->
+                      <option value="4">Видеоситиборд</option>
+                      <option value="5">СитиФормат</option>
+                    </select>
+                  </div>
+                  <ul class="location-tabs ajax-links">
+                    <li><a class="location-link ajax-link active" href="#" data-url="load/location-1.html" data-target="#locationTabContent" data-index="1">
+                        <div class="location-link-pic"><img src="images/location-1.svg"></div>
+                        <div class="location-link-descr">
+                          <p>Медиафасады</p>
+                        </div></a></li>
+                    <li><a class="location-link ajax-link" href="#" data-url="load/location-2.html" data-target="#locationTabContent" data-index="2">
+                        <div class="location-link-pic"><img src="images/location-2.svg"></div>
+                        <div class="location-link-descr">
+                          <p>Супер сайты</p>
+                        </div></a></li>
+                    <!--li-->
+                    <!--	a(href='#', data-url='load/location-3.html', data-target='#locationTabContent', data-index='3').location-link.ajax-link-->
+                    <!--		.location-link-pic-->
+                    <!--			img(src='images/location-3.svg')-->
+                    <!--		.location-link-descr-->
+                    <!--			p 3 &times; 6-->
+                    <li><a class="location-link ajax-link" href="#" data-url="load/location-4.html" data-target="#locationTabContent" data-index="4">
+                        <div class="location-link-pic"><img src="images/location-4.svg"></div>
+                        <div class="location-link-descr">
+                          <p>Ситиборд</p>
+                        </div></a></li>
+                    <li><a class="location-link ajax-link" href="#" data-url="load/location-5.html" data-target="#locationTabContent" data-index="5">
+                        <div class="location-link-pic"><img src="images/location-5.svg"></div>
+                        <div class="location-link-descr">
+                          <p>СитиФормат</p>
+                        </div></a></li>
+                  </ul>
+                </div>
+                <div class="location-tab-content" id="locationTabContent">
+                  <div class="row">
+                    <div class="col-12 col-lg-6 order-2 order-lg-1">
+                      <div class="slider-wrapper slider-wrapper-alt location-gallery-wrapper">
+                        <div class="location-gallery slider-countable slider-alt">
+                          <div class="slide"><img src="files/location-1-1.jpg"></div>
+                          <div class="slide"><img src="files/location-1-2.jpg"></div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-lg-6 order-1 order-lg-2">
+                      <div class="location-descr">
+                        <h4>Описание</h4>
+                        <p>Медиафасады бывают разных типов: кабинетные, модульные, реечные; прозрачные и&nbsp;нет сетчатые, кластерные. Разнообразие моделей позволит решить любую задачу.</p>
+                        <h4>Особенности</h4>
+                        <ul>
+                          <li>Благодаря гибкости и&nbsp;легкости подходят для монтажа фактически на&nbsp;любую поверхность.</li>
+                          <li>Экраны медиафасадов выдают яркую и&nbsp;насыщенную картинку.</li>
+                          <li>По&nbsp;количеству и&nbsp;качеству передаваемой информации у&nbsp;медиафасадов нет конкурентов.</li>
+                          <li>Медиафасады подключаются к&nbsp;компьютеру и&nbsp;сети интернет. Участие человека в&nbsp;работе системы сведено к&nbsp;нулю</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Варианты размещения END-->
+          <!-- Дополнительные функции--><a name="about"></a>
+          <div class="section section-functions">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header">
+                  <h2>Дополнительные функции</h2>
+                </div>
+                <div class="functions-list">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="function-tmb">
+                        <div class="function-tmb-pic"><img src="images/function-1.svg"></div>
+                        <div class="function-tmb-descr">
+                          <h3>Wi-fi ловушка</h3>
+                          <p>Узнайте кто и когда контактирует с вашей рекламой и сделайте им персональное предложение!</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="function-tmb">
+                        <div class="function-tmb-pic"><img src="images/function-2.svg"></div>
+                        <div class="function-tmb-descr">
+                          <h3>Call-tracking</h3>
+                          <p>Измеряйте эффективность рекламы в разных местах с помощью подменных номеров</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="function-tmb">
+                        <div class="function-tmb-pic"><img src="images/function-3.svg"></div>
+                        <div class="function-tmb-descr">
+                          <h3>Целевые аудитории</h3>
+                          <p>Сбор сегментов вашей целевой аудитории в подарок при заказе любого формата размещения</p>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="function-tmb">
+                        <div class="function-tmb-pic"><img src="images/function-4.svg"></div>
+                        <div class="function-tmb-descr">
+                          <h3>QR-Коды</h3>
+                          <p>Узнайте больше о вашей аудитории с помощью UTM-меток и приведите на сайт новых потенциальных клиентов</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Дополнительные функции END-->
+          <!-- Карта конструкций-->
+          <div class="section section-map">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <h2>Карта конструкций</h2>
+                    </div>
+                    <div class="col-12 col-md-6">
+                      <div class="section-header-descr">
+                        <p>Просто выберите расположение на&nbsp;карте и&nbsp;закажите размещение</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="map-wrapper"><iframe src="https://www.google.com/maps/d/embed?mid=1b7gt754G_XY9hmR3O-ClWVXmNSnG9rrD" width="100%" height="600"></iframe></div>
+          </div>
+          <!-- Карта конструкций END-->
+          <!-- Формы-->
+          <div class="section section-alt section-form">
+            <div class="container">
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="form-wrapper">
+                      <div class="form-header">
+                        <div class="form-header-pic"><img src="images/ico-form-1.svg"></div>
+                        <div class="form-header-descr">
+                          <h2>Подготовьте предложение</h2>
+                        </div>
+                      </div>
+                      <div class="offer-form form-alt">
+                        <form>
+                          <div class="row">
+                            <div class="col-12 col-md-4">
+                              <div class="form-group form-group-small">
+                                <label for="offer_city">Где разместиться?</label>
+                                <select name="offer_city" id="offer_city" title="Выбрать">
+                                  <option value="" disabled></option>
+                                  <option value="1">Москва</option>
+                                  <option value="2">Санкт-Петербург</option>
+                                  <option value="3">Москва</option>
+                                  <option value="4">Санкт-Петербург</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="form-group form-group-small">
+                                <label for="offer_num">Кол-во конструкций</label>
+                                <select name="offer_num" id="offer_num" title="Выбрать">
+                                  <option value="" disabled></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="form-group form-group-small">
+                                <label for="offer_format">Формат</label>
+                                <select name="offer_format" id="offer_format" title="Выбрать">
+                                  <option value="" disabled></option>
+                                  <option value="1">Медиафасады</option>
+                                  <option value="2">Супер сайты</option>
+                                  <option value="3">3 &times; 6</option>
+                                  <option value="4">Ситиборд</option>
+                                  <option value="5">СитиФормат</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="form-group form-group-small">
+                                <label for="offer_length">Длина ролика</label>
+                                <select name="offer_length" id="offer_length" title="Выбрать">
+                                  <option value="" disabled></option>
+                                  <option value="1">1 мин</option>
+                                  <option value="2">5 мин</option>
+                                  <option value="3">6 мин</option>
+                                  <option value="4">7 мин</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="form-group form-group-small">
+                                <label for="offer_time">Период размещения</label>
+                                <select name="offer_time" id="offer_time" title="Выбрать">
+                                  <option value="" disabled></option>
+                                  <option value="1">1 день</option>
+                                  <option value="2">2 дня</option>
+                                  <option value="3">3 дня</option>
+                                  <option value="4">4 дня</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-4">
+                              <div class="form-group form-group-small">
+                                <label for="offer_count">Кол-во выходов в&nbsp;сутки</label>
+                                <select name="offer_count" id="offer_count" title="Выбрать">
+                                  <option value="" disabled></option>
+                                  <option value="1">1</option>
+                                  <option value="2">2</option>
+                                  <option value="3">3</option>
+                                  <option value="4">4</option>
+                                  <option value="5">5</option>
+                                </select>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-group">
+                                <label class="placeholder" for="offer_name">Ваше имя</label>
+                                <input type="text" name="offer_name" id="offer_name" required>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-group">
+                                <label class="placeholder" for="offer_phone">+7 (000) 000-00-00</label>
+                                <input class="input-phone" type="text" name="offer_phone" id="offer_phone" required>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-footer">
+                                <button class="btn btn-1" type="submit">Получить</button>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-agree">
+                                <p>Нажимая кнопку “Получить”, я даю свое согласие с&nbsp;<a href="#">Условиями обработки персональных данных</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="form-wrapper">
+                      <div class="form-header">
+                        <div class="form-header-pic"><img src="images/ico-form-1.svg"></div>
+                        <div class="form-header-descr">
+                          <h2>Подобрать варианты</h2>
+                          <p>Опишите вашу задачу в&nbsp;свободной форме</p>
+                        </div>
+                      </div>
+                      <div class="offer-form form-alt">
+                        <form>
+                          <div class="row">
+                            <div class="col-12 col-md-6">
+                              <div class="form-group">
+                                <label class="placeholder" for="variant_name">Ваше имя</label>
+                                <input type="text" name="variant_name" id="variant_name" required>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-group">
+                                <label class="placeholder" for="variant_phone">+7 (000) 000-00-00</label>
+                                <input class="input-phone" type="text" name="variant_phone" id="variant_phone" required>
+                              </div>
+                            </div>
+                            <div class="col-12">
+                              <div class="form-group">
+                                <label class="placeholder" for="variant_message">Описание</label>
+                                <textarea name="variant_message" id="variant_message" rows="4"></textarea>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-footer">
+                                <button class="btn btn-1" type="submit">Подобрать</button>
+                              </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                              <div class="form-agree">
+                                <p>Нажимая кнопку “Подобрать”, я даю свое согласие с&nbsp;<a href="#">Условиями обработки персональных данных</a></p>
+                              </div>
+                            </div>
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Формы END-->
+          <!-- О компании--><a name="about"></a>
+          <div class="section section-about">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header">
+                  <h2>О компании<br>Dooh</h2>
+                </div>
+                <div class="about-wrapper">
+                  <div class="row">
+                    <div class="col-12 col-md-6 col-lg-4">
+                      <div class="pros-list">
+                        <div class="pros-tmb">
+                          <div class="pros-tmb-pic"><img src="images/pros-1.svg"></div>
+                          <div class="pros-tmb-descr">
+                            <p><strong>14&nbsp;лет</strong> на&nbsp;рынке видеорекламы</p>
+                          </div>
+                        </div>
+                        <div class="pros-tmb">
+                          <div class="pros-tmb-pic"><img src="images/pros-2.svg"></div>
+                          <div class="pros-tmb-descr">
+                            <p><strong>Работаем по&nbsp;всей России</strong></p>
+                          </div>
+                        </div>
+                        <div class="pros-tmb">
+                          <div class="pros-tmb-pic"><img src="images/pros-3.svg"></div>
+                          <div class="pros-tmb-descr">
+                            <p><strong>База собственных площадок</strong></p>
+                          </div>
+                        </div>
+                        <div class="pros-tmb">
+                          <div class="pros-tmb-pic"><img src="images/pros-4.svg"></div>
+                          <div class="pros-tmb-descr">
+                            <p><strong>Большой опыт работы</strong> с&nbsp;государственными заказами</p>
+                          </div>
+                        </div>
+                        <div class="pros-tmb">
+                          <div class="pros-tmb-pic"><img src="images/pros-5.svg"></div>
+                          <div class="pros-tmb-descr">
+                            <p><strong>Бонусы:</strong> дополнительное размещения на&nbsp;радио или щитах</p>
+                          </div>
+                        </div>
+                        <div class="pros-tmb">
+                          <div class="pros-tmb-pic"><img src="images/pros-6.svg"></div>
+                          <div class="pros-tmb-descr">
+                            <p><strong>Полный цикл услуг:</strong> от&nbsp;разработки макета до&nbsp;создания фотоотчета</p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-12 col-md-6 col-lg-8">
+                      <div class="about-descr">
+                        <div class="about-descr-inner">
+                          <p>Рекламная группа «Апрель» была создана в далеком 2006-м году. Прошло много времени и мы изменились, прошли путь маленькой группы энтузиастов до профессиональной команды, размещающей клиентов в 524 российских городах.</p>
+                          <p>За 14 лет работы мы заключили более 127 долгосрочных договоров с клиентами, в число которых входят такие крупные и известные во многих странах мира компании как: MSI, KFC, Burger King, Eurocement, VW, концерн Крост, группа компаний Гема, Corsocomo, Центр Обувь, UzDaewoo, Аквафор и т.д.</p>
+                          <p>Своим клиентам рекламная группа «Апрель» предлагает разнообразные варианты рекламы – от наружной (как классические варианты, так и нестандартные) и до продвижения бренда в сети Интернет.</p>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- О компании END-->
+          <!-- Клиенты-->
+          <div class="section section-clients">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header">
+                  <h2>Среди наших<br>клиентов</h2>
+                </div>
+                <div class="slider-wrapper slider-wrapper-up clients-slider-wrapper">
+                  <div class="clients-slider arrows-up">
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-1.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-2.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-3.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-4.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-5.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-6.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-1.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-2.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-3.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-4.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-5.png"></div>
+                    </div>
+                    <div class="slide">
+                      <div class="client-tmb"><img src="files/client-6.png"></div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Клиенты END-->
+          <!-- Проекты--><a name="projects"></a>
+          <div class="section section-projects">
+            <div class="container">
+              <div class="section-content">
+                <div class="section-header">
+                  <h2>Примеры<br>и&nbsp;результаты работы</h2>
+                </div>
+                <div class="slider-wrapper slider-wrapper-up projects-slider-wrapper">
+                  <div class="projects-slider slider-countable arrows-up">
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-2.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-2-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Салон шаурмы</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-2.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-2-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Салон шаурмы</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-2.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-2-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Салон шаурмы</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-2.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-2-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Салон шаурмы</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-2.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-2-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Салон шаурмы</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-2.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-2-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Салон шаурмы</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                    <div class="slide"><a class="project-tmb" href="files/project-1.jpg" data-fancybox="projects_gal">
+                        <div class="project-tmb-pic"><img src="files/project-1-tmb.jpg"></div>
+                        <div class="project-tmb-descr">
+                          <p>Клиент: <strong>Магазин часов Swatch</strong></p>
+                          <p>Результат: <strong>Размещение на Ситиборде (2,7 на 3,7)</strong></p>
+                        </div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Проекты END-->
+          <!-- Заказ-->
+          <div class="section section-order">
+            <div class="container">
+              <div class="section-content">
+                <div class="row">
+                  <div class="col-12 col-lg-6">
+                    <div class="order-descr">
+                      <h2>Закажите прямо сейчас</h2>
+                      <p>и&nbsp;получите в&nbsp;подарок бесплатное размещение на&nbsp;1&nbsp;из&nbsp;наших щитов</p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-lg-6">
+                    <div class="order-form">
+                      <form>
+                        <div class="row">
+                          <div class="col-12">
+                            <div class="form-group">
+                              <label class="placeholder" for="order_name">Ваше имя</label>
+                              <input type="text" name="order_name" id="order_name" required>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-group">
+                              <label class="placeholder" for="order_email">E-mail</label>
+                              <input type="email" name="order_email" id="order_email" required>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-group">
+                              <label class="placeholder" for="order_phone">+7 (000) 000-00-00</label>
+                              <input class="input-phone" type="text" name="order_phone" id="order_phone" required>
+                            </div>
+                          </div>
+                          <div class="col-12 col-md-6">
+                            <div class="form-footer">
+                              <button class="btn btn-2" type="submit">Отправить</button>
+                            </div>
+                          </div>
+                          <div class="col-12">
+                            <div class="form-agree">
+                              <p>Нажимая кнопку “Отправить”, я даю свое согласие с&nbsp;<a href="#">Условиями обработки персональных данных</a></p>
+                            </div>
+                          </div>
+                        </div>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Заказ END-->
+          <!-- Контакты--><a name="contacts"></a>
+          <div class="section section-contacts">
+            <div class="section-content">
+              <div class="container">
+                <div class="section-header">
+                  <h2>Контакты</h2>
+                </div>
+              </div>
+              <div class="contacts-wrapper">
+                <div class="contacts-map" id="contactsMap"></div>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-12 col-md-6">
+                      <div class="contacts-descr">
+                        <div class="contacts-item">
+                          <div class="contacts-item-pic"><img src="images/ico-contacts-phone.svg"></div>
+                          <div class="contacts-item-descr">
+                            <div class="contacts-phone"><a href="tel:+7 (495) 111 22 33">+7 (495) 111 22 33</a></div>
+                            <div class="contacts-button"><a href="#" data-toggle="modal" data-target="#callbackModal">Заказать звонок</a></div>
+                          </div>
+                        </div>
+                        <div class="contacts-item">
+                          <div class="contacts-item-pic"><img src="images/ico-contacts-address.svg"></div>
+                          <div class="contacts-item-descr">
+                            <p>Москва, ул. Улица, 1, корп 2, 3 этаж, офис 5</p>
+                          </div>
+                        </div>
+                        <div class="contacts-item">
+                          <div class="contacts-item-pic"><img src="images/ico-contacts-email.svg"></div>
+                          <div class="contacts-item-descr">
+                            <p><a href="mailto:info@strob.ru">info@strob.ru</a></p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- Контакты END-->
+        </div>
+      </main>
+      <footer>
+        <div class="footer-content">
+          <div class="container">
+            <div class="row">
+              <div class="footer-col-1">
+                <div class="footer-logo"><a href="/"><img src="images/logo.svg" alt="Dooh"></a></div>
+              </div>
+              <div class="footer-col-2">
+                <div class="footer-copy">
+                  <p>&copy;&nbsp;Digital Dooh. Все права защищены, 2020</p>
+                  <p>Разработка сайта&nbsp;&mdash; Paradigma</p>
+                </div>
+              </div>
+              <div class="footer-col-3">
+                <div class="footer-soclinks">
+                  <div class="row">
+                    <div class="col-12 col-md-6"><a class="soclink" href="#">
+                        <div class="soclink-ttl">Facebook</div>
+                        <div class="soclink-ico"><img class="svg-inline" src="images/soclink-fb.svg"></div></a></div>
+                    <div class="col-12 col-md-6"><a class="soclink" href="#">
+                        <div class="soclink-ttl">Instagram</div>
+                        <div class="soclink-ico"><img class="svg-inline" src="images/soclink-instagram.svg"></div></a></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </footer>
+      <div class="modal fade form-modal" id="consultModal" tabindex="-1">
+        <div class="modal-dialog">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close.svg"></button>
+          <div class="modal-content">
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="modal-header-ico"><img src="images/ico-modal-consult.svg"></div>
+                <div class="h2">Получить<br>консультацию</div>
+              </div>
+              <div class="modal-body">
+                <div class="form-alt modal-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="consult_name">Ваше имя</label>
+                          <input type="text" name="consult_name" id="consult_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="consult_phone">+7 (000) 000-00-00</label>
+                          <input class="input-phone" type="text" name="consult_phone" id="consult_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="placeholder" for="consult_message">Описание</label>
+                          <textarea name="consult_message" id="consult_message" rows="4"></textarea>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, я даю свое согласие с&nbsp;<a href="#">Условиями обработки персональных данных</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="briefModal" tabindex="-1">
+        <div class="modal-dialog">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close.svg"></button>
+          <div class="modal-content">
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="modal-header-ico"><img src="images/ico-modal-brief.svg"></div>
+                <div class="h2">Заполнить<br>бриф</div>
+              </div>
+              <div class="modal-body">
+                <div class="form-alt modal-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-12">
+                        <div class="form-group">
+                          <label class="placeholder" for="brief_name">Ваше имя</label>
+                          <input type="text" name="brief_name" id="brief_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="brief_phone">+7 (000) 000-00-00</label>
+                          <input class="input-phone" type="text" name="brief_phone" id="brief_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="brief_email">E-mail</label>
+                          <input type="email" name="brief_email" id="brief_email" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <div class="dl-link-wrapper"><a class="dl-link" href="#">Скачать бриф</a></div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group form-group-file">
+                          <div class="form-file">
+                            <input type="file" name="brief_file" id="brief_file" data-label="Прикрепить заполненный бриф" required>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, я даю свое согласие с&nbsp;<a href="#">Условиями обработки персональных данных</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade form-modal" id="callbackModal" tabindex="-1">
+        <div class="modal-dialog">
+          <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close.svg"></button>
+          <div class="modal-content">
+            <div class="modal-content-inner">
+              <div class="modal-header">
+                <div class="h2">Заказать<br>обратный звонок</div>
+                <div class="modal-info">
+                  <p>Оставьте заявку и&nbsp;мы&nbsp;перезвоним вам в&nbsp;течение 15&nbsp;минут</p>
+                </div>
+              </div>
+              <div class="modal-body">
+                <div class="form-alt modal-form">
+                  <form>
+                    <div class="row">
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="callback_name">Ваше имя</label>
+                          <input type="text" name="callback_name" id="callback_name" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-group">
+                          <label class="placeholder" for="callback_phone">+7 (000) 000-00-00</label>
+                          <input class="input-phone" type="text" name="callback_phone" id="callback_phone" required>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-footer">
+                          <button class="btn btn-1" type="submit">Отправить</button>
+                        </div>
+                      </div>
+                      <div class="col-12 col-md-6">
+                        <div class="form-agree">
+                          <p>Нажимая кнопку “Отправить”, я даю свое согласие с&nbsp;<a href="#">Условиями обработки персональных данных</a></p>
+                        </div>
+                      </div>
+                    </div>
+                  </form>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="modal fade success-modal" id="successModal" tabindex="-1">
+        <button class="close" type="button" data-dismiss="modal" aria-label="Close"><img class="svg-inline" src="images/close.svg"></button>
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <div class="h2"><span>Ваша заявка успешно принята!</span></div>
+            </div>
+            <div class="modal-body">
+              <div class="text">
+                <p>Перезвоним в течение 15 минут</p>
+              </div>
+              <div class="success-modal-button">
+                <button class="btn btn-1" type="button" data-dismiss="modal" aria-label="Close">Закрыть</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script src="js/jquery-3.3.1.min.js"></script>
+      <script src="js/bootstrap/js/bootstrap.bundle.min.js"></script>
+      <script src="js/bootstrap-select.min.js"></script>
+      <script src="js/jquery.validate.min.js"></script>
+      <script src="js/additional-methods.min.js"></script>
+      <script src="js/jquery.maskedinput.min.js"></script>
+      <script src="js/wNumb.min.js"></script>
+      <script src="js/slick.min.js"></script>
+      <script src="js/fancybox/jquery.fancybox.min.js"></script>
+      <script src="js/greensock/TweenMax.min.js"></script>
+      <script src="js/greensock/plugins/CSSRulePlugin.min.js"></script>
+      <script src="js/greensock/plugins/ScrollToPlugin.min.js"></script>
+      <script src="js/iscroll-probe.js"></script>
+      <script src="js/scrollmagic/ScrollMagic.min.js"></script>
+      <script src="js/scrollmagic/plugins/animation.gsap.min.js"></script>
+      <script src="js/jquery.mousewheel.js"></script>
+      <script src="js/bootstrap-fileinput/js/fileinput.min.js"></script>
+      <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU"></script>
+      <script src="js/main.js"></script>
+      <!--script(src='js/animations.js')-->
+    </div>
+  </body>
+</html>
