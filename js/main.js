@@ -354,6 +354,20 @@ $(document).ready(function() {
 		backFocus: false
 	});
 
+	// Project tmb
+
+	$(".project-tmb").on("click", function (e) {
+
+		if (!$(e.target).data("fancybox")) {
+
+			$(this).find(".project-gal a:first-child").click();
+
+		}
+
+	});
+
+	// Project tmb END
+
 	// Show more
 
 	$("body").on("click", ".more-link", function () {

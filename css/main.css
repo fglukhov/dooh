@@ -1477,7 +1477,8 @@ li:last-child .location-link {
   display: block;
   text-decoration: none !important;
   min-height: 100%;
-  color: #000 !important; }
+  color: #000 !important;
+  cursor: pointer; }
 
 .project-tmb-pic {
   margin: 0 0 22px 0; }
